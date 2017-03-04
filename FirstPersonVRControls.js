@@ -8,7 +8,7 @@
  */
 module.exports = function (THREE) {
 
-  THREE.FirstPersonVRControls = function (camera, scene) {
+  return function (camera, scene) {
     var ZAXIS = new THREE.Vector3(0, 0, 1);
     var YAXIS = new THREE.Vector3(0, 1, 0);
 
