@@ -7,18 +7,18 @@
  * @author paulirish / http://paulirish.com/
  */
 
-THREE.FirstPersonVRControls = function ( camera, scene ) {
-  var ZAXIS = new THREE.Vector3(0, 0, 1);
-  var YAXIS = new THREE.Vector3(0, 1, 0);  
+FirstPersonVRControls = function ( camera, scene ) {
+  var ZAXIS = new Vector3(0, 0, 1);
+  var YAXIS = new THREEVector3(0, 1, 0);  
 
-  this.object = new THREE.Object3D();
+  this.object = new Object3D();
 
   this.enabled = true;
   this.verticalMovement = false;
   this.movementSpeed = 1.0;
   this.angle = 0;
   
-  this.angleQuaternion = new THREE.Quaternion();
+  this.angleQuaternion = new Quaternion();
 
   this.moveForward = false;
   this.moveBackward = false;
